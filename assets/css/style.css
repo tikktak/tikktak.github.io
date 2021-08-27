@@ -1,0 +1,135 @@
+/* ========== Google Fonts =============== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* ========== BASE ============= */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins, sans-serif;
+}
+
+body {
+	background-color: hsl(24, 6%, 7%);
+	color: hsl(4, 4%, 97%);
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* CSS Classes */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 80%;
+	width: 100%;
+	max-width: 960px;
+	display: flex;
+}
+
+.container ul li {
+	list-style: none;
+	margin-bottom: 20px;
+	display: inline-block;
+	margin: 0 10px 0px 10px;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	width: max-content;
+	animation-duration: 7s;
+	animation-name: slidein;
+}
+
+.container ul li p {
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+.container ul li svg {
+	transition: color .2s ease-in-out;
+}
+
+.container ul li.discord p span {
+	transition: opacity .2s ease-in-out;
+	opacity: 0;
+	color: #afafaf;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.container ul li.discord:hover p span {
+	opacity: 0;
+}
+
+.container ul li:hover svg#twitter {
+	color: #31aae1;
+}
+
+.container ul li:hover svg#github {
+	color: #8e57b5;
+}
+
+.container ul li:hover svg#discord {
+	color:  #5865f2;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.intro__h2 {
+	font-size: 1em;
+	font-weight: 600;
+	margin-bottom: 8px;
+	letter-spacing: 0;
+	color: hsl(4, 2%, 60%);
+	animation-duration: 2s;
+	animation-name: slidein ;
+}
+
+.intro__h1 {
+	font-size: 2.5em;
+	font-weight: 750;
+	margin-bottom: 17px;
+	animation-duration: 3s;
+	animation-name: slidein ;
+}
+
+.intro__p {
+	font-size: 1.10em;
+	font-weight: 300;
+	margin-bottom: 45px;
+	animation-duration: 6s;
+	animation-name: slidein ;
+}
+
+@keyframes slidein {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity 1;
+		transform: translateX(0%);
+	}
+}
